@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f6f0; 
+    color: #2c351f;            
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.main-wrapper {
+    display: flex;
+    max-width: 950px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.left-column {
+    flex: 2; 
+    padding: 40px;
+}
+
+.resume-header {
+    background-color: #d9f99d; 
+    padding: 30px;
+    margin: -40px -40px 30px -40px; 
+}
+
+.resume-header h1 {
+    font-size: 2.2rem;
+    color: #1e3a1e;
+    font-weight: 700;
+}
+
+.resume-header .subtitle {
+    font-size: 1.1rem;
+    color: #3f6212;
+    margin-top: 5px;
+    font-weight: 600;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.left-column h2 {
+    font-size: 1.2rem;
+    background-color: #bef264; 
+    color: #1e3a1e;
+    padding: 6px 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.left-column p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+    color: #334155;
+}
+project-block {
+    margin-bottom: 20px;
+}
+
+.project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+
+.project-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #1e3a1e;
+}
+
+.project-meta {
+    font-size: 0.85rem;
+    color: #65a30d;
+    font-weight: 600;
+}
+
+.left-column ul {
+    margin-left: 20px;
+}
+
+.left-column li {
+    font-size: 0.9rem;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+
+.right-sidebar {
+    flex: 1; 
+    background-color: #365314; 
+    color: #f4fbf0;            
+    padding: 40px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sidebar-section {
+    width: 100%;
+    margin-bottom: 35px;
+}
+
+.sidebar-info {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
+    color: #d9f99d;
+}
+
+.sidebar-section h3 {
+    font-size: 1.1rem;
+    color: #bef264; 
+    border-bottom: 1px solid #4d7c0f;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.sidebar-skills {
+    list-style-type: none;
+}
+
+.sidebar-skills li {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    color: #f4fbf0;
+}
+
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+    }
+    .right-sidebar {
+        order: -1; 
+}
